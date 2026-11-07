@@ -1,24 +1,36 @@
+
 {
   "expo": {
     "name": "Parser",
-    "slug": "Parser",
+    "slug": "parser",
     "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "ios": {
-      "supportsTablet": true
-    },
+    "icon": "./assets/iconsigma.png",
+    "plugins": [
+      [
+        "expo-audio",
+        {
+          "enableBackgroundPlayback": true,
+          "recordAudioAndroid": false
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "granularPermissions": ["audio"]
+        }
+      ]
+    ],
     "android": {
-      "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
-      }
+      "package": "com.sushant_lxqt.parser"
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "ios": {
+      "bundleIdentifier": "com.sushant-lxqt.parser"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d591ba64-64f5-4de2-bcfc-d77146e32c71"
+      }
     }
   }
 }
+ 
